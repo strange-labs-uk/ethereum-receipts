@@ -1,8 +1,8 @@
-.PHONY: dev
-dev: ; MANUALRUN=1 docker-compose -f docker-compose.yml -f docker-compose.linked.yml up
+.PHONY: linked
+linked: ; MANUALRUN=1 docker-compose -f docker-compose.yml -f docker-compose.linked.yml up
 
 .PHONY: start
-start: ; docker-compose -f docker-compose.yml up
+dev: ; docker-compose -f docker-compose.yml -f docker-compose.dev.yml up
 
 .PHONY: build
 build:
