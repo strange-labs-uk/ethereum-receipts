@@ -9,10 +9,10 @@ $ make build
 ## start
 
 ```bash
-$ make dev
-$ make frontend.cli
-$ yarn run watch
+$ make start
 ```
+
+Open [http://localhost](http://localhost) in your browser.
 
 ## design
 
@@ -140,4 +140,14 @@ function updateControllerAddress(address) {
   if(sender.address != contract.owner) return
   controllerAddress = address
 }
+```
+
+## start linked to template stack
+
+If you are wanting to edit templtestack whilst hot reloading - then:
+
+```bash
+$ make dev
+$ make frontend.cli
+$ yarn run watch
 ```
