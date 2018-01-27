@@ -32,8 +32,7 @@
     "reselect": "^3.0.1",
     "template-api": "^2.4.1",
     "template-tools": "^1.2.3",
-    "template-ui": "^1.9.3",
-    "shared": "file:../shared"
+    "template-ui": "^1.9.3"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",

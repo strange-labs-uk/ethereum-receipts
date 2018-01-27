@@ -17,17 +17,12 @@ class ApplicationContainer extends Component {
 
 export default connect(
   (state, ownProps) => {
-    const user = selectors.auth.user(state)
-    const username = selectors.auth.displayName(user)    
     const menuOptions = config.menu.normal()
     const manualScroll = selectors.system.manualScroll(state)
     const menuOpen = selectors.system.menuOpen(state)
-    const installation = selectors.auth.activeInstallation(state)
     return {
-      title: installation ? installation.name : config.title,
+      title: config.title,
       menuOpen,
-      user,
-      username,
       menuOptions,
       bodyScroll: manualScroll ? true : false,
       initialized: selectors.system.initialized(state),
