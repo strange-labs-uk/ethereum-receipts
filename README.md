@@ -147,7 +147,7 @@ function updateControllerAddress(address) {
 If you are wanting to edit templtestack whilst hot reloading - then:
 
 ```bash
-$ make dev
+$ make linked
 $ make frontend.cli
 $ yarn run watch
 ```
