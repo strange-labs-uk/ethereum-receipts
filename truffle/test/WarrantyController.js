@@ -1,0 +1,1 @@
+var WarrantyController = artifacts.require("WarrantyController");

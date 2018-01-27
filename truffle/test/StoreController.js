@@ -1,0 +1,1 @@
+var StoreController = artifacts.require("StoreController");
