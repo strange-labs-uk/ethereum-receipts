@@ -1,0 +1,119 @@
+{
+  "contractName": "Storage",
+  "abi": [],
+  "bytecode": "0x60606040523415600e57600080fd5b603580601b6000396000f3006060604052600080fd00a165627a7a72305820756d4bf5c6489ad498a6f24b738d056bc51412a7666a8ceca0289f12d88942410029",
+  "deployedBytecode": "0x6060604052600080fd00a165627a7a72305820756d4bf5c6489ad498a6f24b738d056bc51412a7666a8ceca0289f12d88942410029",
+  "sourceMap": "26:69:1:-;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "26:69:1:-;;;;;",
+  "source": "pragma solidity ^0.4.18;\n\ncontract Storage {\n\n    mapping(string => string) private map;\n    \n}",
+  "sourcePath": "/Users/errolc/code/ethereum-receipts/truffle/contracts/Storage.sol",
+  "ast": {
+    "attributes": {
+      "absolutePath": "/Users/errolc/code/ethereum-receipts/truffle/contracts/Storage.sol",
+      "exportedSymbols": {
+        "Storage": [
+          63
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.4",
+            ".18"
+          ]
+        },
+        "id": 58,
+        "name": "PragmaDirective",
+        "src": "0:24:1"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            63
+          ],
+          "name": "Storage",
+          "scope": 64
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "map",
+              "scope": 63,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "mapping(string memory => string storage ref)",
+              "value": null,
+              "visibility": "private"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "type": "mapping(string memory => string storage ref)"
+                },
+                "children": [
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string storage pointer"
+                    },
+                    "id": 59,
+                    "name": "ElementaryTypeName",
+                    "src": "58:6:1"
+                  },
+                  {
+                    "attributes": {
+                      "name": "string",
+                      "type": "string storage pointer"
+                    },
+                    "id": 60,
+                    "name": "ElementaryTypeName",
+                    "src": "68:6:1"
+                  }
+                ],
+                "id": 61,
+                "name": "Mapping",
+                "src": "50:25:1"
+              }
+            ],
+            "id": 62,
+            "name": "VariableDeclaration",
+            "src": "50:37:1"
+          }
+        ],
+        "id": 63,
+        "name": "ContractDefinition",
+        "src": "26:69:1"
+      }
+    ],
+    "id": 64,
+    "name": "SourceUnit",
+    "src": "0:95:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.4.18+commit.9cf6e910.Emscripten.clang"
+  },
+  "networks": {
+    "4447": {
+      "events": {},
+      "links": {},
+      "address": "0x345ca3e014aaf5dca488057592ee47305d9b3e10"
+    }
+  },
+  "schemaVersion": "1.0.1",
+  "updatedAt": "2018-01-28T09:49:25.484Z"
+}
